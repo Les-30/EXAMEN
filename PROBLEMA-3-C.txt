@@ -1,0 +1,147 @@
+#include <iostream>
+
+#include <sstream>
+
+#include <cstdlib>
+
+#include <cmath>
+
+
+
+using namespace std;
+
+
+// Headers
+
+
+string toString (double);
+
+int toInt (string);
+
+double toDouble (string);
+
+
+
+
+int main() {
+ 
+  cout << "Introduce el valor de la resistecia 1" << endl;
+ 
+       double r1;
+ 
+   
+    cin >> r1;
+ 
+  cout << "Introduce el valor de la resistecia 2" << endl;
+
+       double r2;
+   
+ 
+      cin >> r2;
+  
+  cout << "Introduce el valor de la resistecia 3" << endl;
+ 
+       double r3;
+ 
+   
+    cin >> r3;
+   
+  cout << "Introduce el valor de la resistecia 4" << endl;
+
+       double r4;
+  
+   
+    cin >> r4;
+  
+  cout << "Introduce el valor de la resistecia 5" << endl;
+ 
+       double r5;
+    
+  
+       cin >> r5;
+   
+  cout << "Introduce el voltaje" << endl;
+
+       double sV;
+    
+ 
+       cin >> sV;
+   
+  cout << "La Resistencia equivalente es" << endl;
+ 
+       double sR;
+  
+  
+  
+       sR = (double) 1 / ((double) 1 / r1 + (double) 1 / r2 + (double) 1 / r3 + (double) 1 / r4 + (double) 1 / r5);
+ 
+  cout << sR << endl;
+ 
+   cout << "La intensidad de la corriente en la resistencia 1 es" << endl;
+
+    double t1;
+    
+
+    t1 = sV / r1;
+   
+ cout << t1 << endl;
+    
+cout << "La intensidad de la corriente en la resistencia 2 es" << endl;
+  
+  double t2;
+ 
+   
+    t2 = sV / r2;
+ 
+   cout << t2 << endl;
+
+    cout << "La intensidad de la corriente en la resistencia 3 es" << endl;
+   
+ double t3;
+    
+   
+ t3 = sV / r3;
+  
+  cout << t3 << endl;
+ 
+   cout << "La intensidad de la corriente en la resistencia 4 es" << endl;
+  
+  double t4;
+    
+  
+  t4 = sV / r4;
+   
+ cout << t4 << endl;
+ 
+   cout << "La intensidad de la corriente en la resistencia 5 es" << endl;
+  
+  double t5;
+    
+ 
+   t5 = sV / r5;
+  
+  cout << t5 << endl;
+ 
+   cout << "La intensidad de la corriente es" << endl;
+ 
+   int sI;
+   
+ 
+    sI = t1 + t2 + t3 + t4 + t5;
+  
+  cout << sI << endl;
+  
+  return 0;
+
+}
+
+ 
+string toString (double value) { 
+
+stringstream temp;
+
+temp << value;
+
+return temp.str();
+
+}

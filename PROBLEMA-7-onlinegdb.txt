@@ -1,0 +1,104 @@
+    import java.util.*;
+
+                 
+public class Main
+{
+	
+                 public static void main(String[] args) {
+
+
+	         Scanner input = new Scanner(System.in);
+
+
+	 
+	 System.out.println("Las Cordenadas del Centro son:");
+	
+  
+ 
+                 double H;
+   
+                  H = input.nextDouble();
+     
+
+   
+              double K;
+   
+                  K = input.nextDouble();
+
+ 
+       
+          System.out.println("Su Semi Eje Transverso");
+  
+
+      
+           double A;
+       
+                  A = input.nextDouble();
+ 
+  
+     
+            System.out.println("Su Semi Eje Conjugado");
+
+ 
+       
+          double B;
+    
+                  B = input.nextDouble();
+  
+
+      
+           double C;
+   
+                  C = Math.sqrt(Math.pow(A, 2) + Math.pow(B, 2));
+ 
+
+       
+          double sVertice;
+   
+                  sVertice = H + A;
+   
+     
+    
+                 double sVertice2;
+       
+                  sVertice2 = H - A;
+     
+   
+ 
+                 double sFoco;
+      
+                  sFoco = H + C;
+   
+     
+   
+                 double sFoco2;
+       
+                  sFoco2 = H - C;
+   
+     
+
+                 double sDistancia;
+ 
+                  sDistancia = sFoco - H;
+ 
+
+       
+        
+  System.out.println("Los Vertices estan en "+sVertice2+","+K+" y "+sVertice+","+K);
+  
+   
+   
+              System.out.println("Los Vertices estan en "+sFoco2+","+ K+" y "+sFoco+","+K);
+ 
+       
+
+                 System.out.println("La Distancia del Centro al Foco es: "+sDistancia);
+        
+   
+
+  
+ 
+}
+
+
+ }
